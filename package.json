@@ -11,6 +11,6 @@
   "license": "MIT",
   "dependencies": {
     "express": "4.14.0",
-    "oskari-rpc": "2.0.2"
+    "oskari-rpc": "2.0.3"
   }
 }
