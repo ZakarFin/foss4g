@@ -1,3 +1,8 @@
+/**
+ * startApp-function with examples on ui usage:
+ * - show different kinds of infoboxes with or without style/actions
+ * - progress spinner
+ */
 function startApp(channel) {
     channel.log('Starting the app');
     channel.handleEvent('MapClickedEvent', function(data) {

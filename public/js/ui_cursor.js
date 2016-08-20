@@ -1,3 +1,8 @@
+/**
+ * startApp-function with examples on ui usage:
+ * - cycle through some cursor styles on map clicks
+ * - open coordinate tool once cursors done
+ */
 function startApp(channel) {
     channel.log('Starting the app');
     var styles = ['crosshair', 'move', 'progress', 'default'];

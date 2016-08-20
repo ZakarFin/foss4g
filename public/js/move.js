@@ -1,3 +1,10 @@
+/**
+ * startApp-function with examples on handling map location:
+ * - listen to map clicks
+ * - listen to map moves
+ * - map position, bbox and zoom range
+ * - request user location
+ */
 function startApp(channel) {
     channel.log('Starting the app');
     channel.handleEvent('MapClickedEvent', function(data) {
@@ -8,11 +15,6 @@ function startApp(channel) {
         console.log('Map moved! Current center is N: ' + data.centerY + ' E:' + data.centerX);
     });
     
-    // user location
-    channel.postRequest('MyLocationPlugin.GetUserLocationRequest');
-    channel.handleEvent('UserLocationEvent', function(data) {
-        console.log('User is at N: ' + data.lat + ' E:' + data.lon);
-    });
     // functions
     channel.getMapPosition(function(data) {
         channel.log('Map position is', data);
@@ -23,4 +25,9 @@ function startApp(channel) {
     channel.getZoomRange(function(data) {
         channel.log('Map zoomrange is', data);
     }); 
+    // user location
+    channel.postRequest('MyLocationPlugin.GetUserLocationRequest');
+    channel.handleEvent('UserLocationEvent', function(data) {
+        console.log('User is at N: ' + data.lat + ' E:' + data.lon);
+    });
 }

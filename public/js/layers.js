@@ -1,4 +1,9 @@
-
+/**
+ * startApp-function with examples on layer handling:
+ * - getAllLayers()
+ * - toggleLayers on map click
+ * - opacity fade with another click
+ */
 var layers = [];
 
 function startApp(channel) {

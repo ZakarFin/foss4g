@@ -1,3 +1,9 @@
+/**
+ * startApp-function with examples on markers usage:
+ * - cycle through built-in marker shapes on clicks
+ * - handle marker click by updating the marker with custom svg
+ * - reset after 10 clicks
+ */
 function startApp(channel) {
     channel.log('Starting the app');
     // on map click: add marker with different shape
