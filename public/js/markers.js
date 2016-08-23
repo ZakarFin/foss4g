@@ -4,6 +4,8 @@
  * - handle marker click by updating the marker with custom svg
  * - reset after 10 clicks
  */
+var count = 1;
+
 function startApp(channel) {
   channel.log('Starting the app');
   // on map click: add marker with different shape
@@ -38,7 +40,6 @@ function startApp(channel) {
 }
 
 var latest;
-var count = 1;
 var messages = ['', 'Hello', 'from Bonn', 'and Foss4g', '', '',
   'I am marker 006'
 ];
